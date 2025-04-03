@@ -1,0 +1,55 @@
+.show {
+  object-fit: contain;
+  height: 500px;
+  /* background-color: aqua; */
+}
+
+.collection img {
+  min-height: 80px;
+  max-height: 120px;
+}
+
+.item-car img {
+  height: 320px;
+}
+
+.text-contain {
+  --ditant-val: 10px;
+  left: var(--ditant-val);
+  right: var(--ditant-val);
+  bottom: var(--ditant-val);
+  transform: translateY(200%);
+  -webkit-transform: translateY(200%);
+  -moz-transform: translateY(200%);
+  -ms-transform: translateY(200%);
+  -o-transform: translateY(200%);
+  transition: 0.4s all;
+  -webkit-transition: 0.4s all;
+  -moz-transition: 0.4s all;
+  -ms-transition: 0.4s all;
+  -o-transition: 0.4s all;
+}
+
+.item-car:hover .text-contain {
+  transform: translateY(0);
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .item-car img {
+    height: 280px;
+  }
+}
+
+.inner-image {
+  width: 50%;
+  height: 600px;
+  background-size: 100% 100%;
+}
+
+.inner-image i {
+  cursor: pointer;
+}
