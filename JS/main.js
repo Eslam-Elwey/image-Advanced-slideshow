@@ -144,5 +144,3 @@ hiddenShow.addEventListener("click", function (e) {
     closeItem();
   }
 });
-
-// affectedSlideShow.addEventListener('mouse')
